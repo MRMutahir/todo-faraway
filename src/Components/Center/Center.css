@@ -1,0 +1,25 @@
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* color: red; */
+}
+.center-top {
+  margin: 20px auto;
+  height: 50vh;
+}
+.c-t-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+.center-buttom {
+  margin: 20px auto;
+  height: 10vh;
+}
+.center-buttom select {
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}

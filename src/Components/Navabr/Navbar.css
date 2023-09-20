@@ -8,11 +8,34 @@
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-  background-color: orangered;
+  background-color: #f19720;
   height: 20vh;
 }
-
+.nav-buttom {
+  display: flex;
+  gap: 10px;
+}
 .center-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.nav-buttom select {
+  width: 80px;
+
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.nav-buttom input {
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+.btnAll{
+  width: 60px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: aqua;
 }
