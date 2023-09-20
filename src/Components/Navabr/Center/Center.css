@@ -1,0 +1,11 @@
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* color: red; */
+}
+.center-top {
+  flex: 8;
+}
+.center-buttom {
+  flex: 3;
+}

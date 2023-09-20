@@ -1,0 +1,18 @@
+.main-Navbar {
+  /* margin: 0px 50%; */
+}
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  background-color: orangered;
+  height: 20vh;
+}
+
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+}
