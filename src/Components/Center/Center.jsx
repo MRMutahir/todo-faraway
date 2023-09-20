@@ -4,15 +4,15 @@ function Center() {
   return (
     <div className="center-main">
       <div className="center-wrapper">
-        {" "}
+
         <div className="center-top">
-          {" "}
+
           <ul className="c-t-list">
 
           </ul>
         </div>
         <div className="center-buttom">
-          {" "}
+
           <select>
             <option>Sort By input order</option>
             <option>Sort By Description</option>
