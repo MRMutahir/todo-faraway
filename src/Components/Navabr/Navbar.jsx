@@ -3,15 +3,17 @@ import "./Navbar.css";
 
 function Navbar() {
   const [listvalue, setlistvalue] = useState();
-  const [selectvalue, setselectvalue] = useState('');
-  let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+  const [selectNumbers, setSelectNumbers] = useState();
 
-  function handleSelectChange(e) {
-    // Update the selectvalue state when an option is selected
-    setselectvalue(e.target.value);
-    // You can now access the selected value using selectvalue
-    console.log("Selected value:", selectvalue);
-  }
+  // let numbers = [
+  //   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  // ];
+
+  function handleSelectChange(e) {}
+
+  // () => {
+  //   handleSelectChange;
+  // };
 
   return (
     <div className="main-Navbar">
@@ -20,15 +22,24 @@ function Navbar() {
           <h1 className="bg-logo">Far Away</h1>
         </div>
         <div className="nav-buttom">
-          <span className="heading-name">What do you need for your 😍 trip?</span>
-          <select value={selectvalue} onChange={handleSelectChange}>
-            <option></option>
+          <span className="heading-name">
+            What do you need for your 😍 trip?
+          </span>
+          <select className="selectOfSubheader">
+            {Array.from(Array(20), (_, index) => (
+              <option value={index} key={index}>
+                {index + 1}
+              </option>
+            ))}
+          </select>
+          {/* <select value={selectvalue} onChange={handleSelectChange}>
+        
             {numbers.map((ele, index) => (
               <option key={index} value={ele}>
                 {ele}
               </option>
             ))}
-          </select>
+          </select> */}
           <input type="text" />
           <button className="btnAll">ADD</button>
         </div>
